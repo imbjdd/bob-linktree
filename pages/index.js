@@ -1,65 +1,50 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Bob Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <main>
+        <div class="flex justify-center mt-20">
+          <div>
+            <div class="animate-bounce">
+              <Image
+                src="/images/profile.jpeg"
+                alt="Picture of the author"
+                width={144}
+                height={144}
+                class="rounded-full"
+              />
+            </div>
+            <div class="content-center">
+              <p class="text-4xl font-bold text-black text-center content-center text-blue-500">Bobbie</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-6 mt-5 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+          <div>
+            <div class="text-xl font-medium text-black"><a href="https://github.com/6346563751">Github</a></div>
+            <p class="text-gray-500">I ❤️ the Open Source philosophy !</p>
+          </div>
+        </div>
+        <div class="p-6 mt-5 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+          <div>
+            <div class="text-xl font-medium text-black"><a href="https://www.codingame.com/profile/9230a20793ed86660398935aec2932989737173">Codingame</a></div>
+            <p class="text-gray-500">Want to challenge me ? 💻</p>
+          </div>
+        </div>
+        <div class="p-6 mt-5 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
+          <div>
+            <div class="text-xl font-medium text-black"><a href="https://discord.gg/35GVvheEj6">Discord Bluekeys</a></div>
+            <p class="text-gray-500">One of the greatest 🧑‍🤝‍🧑 communauty !</p>
+          </div>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
