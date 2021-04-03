@@ -41,7 +41,7 @@ export default function Home() {
         <div class="p-6 mt-5 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
           <div>
             <div class="text-xl font-medium text-black"><a href="https://discord.gg/35GVvheEj6">Discord Bluekeys</a></div>
-            <p class="text-gray-500">One of the greatest 🧑‍🤝‍🧑 community !</p>
+            <p class="text-gray-500">One of the greatest 🧑‍🤝‍🧑 communities !</p>
           </div>
         </div>
       </main>
