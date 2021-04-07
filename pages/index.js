@@ -22,7 +22,7 @@ export default function Home() {
               />
             </div>
             <div class="content-center">
-              <p class="text-4xl font-bold text-black text-center content-center text-blue-500">Bobbie</p>
+              <p class="text-4xl font-bold text-black text-center content-center text-gray-50">Bobbie</p>
             </div>
           </div>
         </div>
